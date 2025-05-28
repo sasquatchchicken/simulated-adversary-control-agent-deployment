@@ -33,5 +33,5 @@ def get_result(uid):
     return results.get(uid, "[No result yet]")
 
 if __name__ == '__main__':
-    #app.run(host="192.168.1.10", port=8443, ssl_context="adhoc")  # HTTPS test only
-    app.run(host="192.168.1.10", port=8080)
+    #app.run(host="<c2_IP_here>", port=8443, ssl_context="adhoc")  # HTTPS test only, still a bit buggy with ssl certs
+    app.run(host="<c2_IP_here>", port=8080)
