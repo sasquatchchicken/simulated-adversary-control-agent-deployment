@@ -76,7 +76,10 @@ curl -k -X POST https://<hosting_c2_server>:8080/task/<UID> ^
   -d '{"module": "shell", "args": "whoami"}'
 or use a one-liner with a task.json file you create
 curl -k -X POST http://<hosting_c2_server>:8080/task/<UID> -H "Content-Type: application/json" -d @task.json
-``` 
+```
+### Contributor to this project
+https://github.com/filipas123 
+
 **NOTE:**  this toolset is interchangeable meaning the c2_url, interval and enabled modlues can modified.  What you see here is a simple payload simulation and you can change the module to be a payload you wish to test.  You must make the changes in the **beacon_task_handler.py** yourself!
 ## Disclaimer
 **This tool is provided for ethical red team operations, threat simulations, and research. Do not use against systems you do not own or manage.**
