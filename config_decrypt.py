@@ -1,4 +1,5 @@
-#utils/config_decrypt.py,
+#config_decrypt.py
+
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import unpad
 import json
