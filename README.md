@@ -1,7 +1,7 @@
 # simulated-adversary-control-agent-deployment
 
 ### Overview
-Deploy a controlled, encrypted software agent designed to simulate real-world attacker behavior without risk or persistence. Leverage the **Red Team Beacon Framework**, a modular encrypted beacon + C2 simulation stack for red team operations and adversary emulation. Built for secure testing of endpoint defenses, dynamic payload staging, and encrypted tasking.
+Deploy a controlled, encrypted software agent designed to simulate real world attacker behavior without risk or persistence. Leverage the **Red Team Beacon Framework**, a modular encrypted beacon + C2 simulation stack for red team operations and adversary emulation. Built for secure testing of endpoint defenses, dynamic payload staging, and encrypted tasking.
 
 - Validate defensive controls
 - Identify detection gaps
